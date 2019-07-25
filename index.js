@@ -40,7 +40,7 @@ server.get('/api/users/:id', (request,response)=> {
 server.post('/api/users', (request,response) =>{
     const userInfo = request.body;
     const {name, bio} = request.body;
-    console.log(userInfo);
+    //console.log(userInfo);
 
     if(!name || !bio){
         response.status(400).json({errorMessage: "Please provide name and bio for the user." })
